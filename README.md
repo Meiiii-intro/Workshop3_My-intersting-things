@@ -1,5 +1,5 @@
 # Project Name
-** Taste Universe
+Taste Universe
 
 ## Project Overview
 This interactive project transforms 52 personal food photos into a dynamic, living "universe." 
