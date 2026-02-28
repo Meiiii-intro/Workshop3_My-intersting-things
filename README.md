@@ -2,20 +2,22 @@
 Taste Universe
 
 ## Project Overview
-This interactive project transforms 52 personal food photos into a dynamic, living "universe." 
-By extracting lightweight metadata (e.g., date) and adding my own tags and subjective interest scores (1–10), I created a system where culinary memories become floating nodes in a connected web of experiences.
+In this project, I used 52 food photos that I took myself. I turned them into a small “food universe” of moving points.
+Each photo becomes one node. I also added simple tags (cuisine type) and my own interest score (1–10). The goal is to show my food preferences over time in a playful way.
 
 ## Technical Implementation
-- **Data Collection / Processing**: A custom **Node.js** script parses my photo folder and generates a minimised `data.json` (IDs, dates, cuisine tags, interest score).
-- **Generative Visualisation**: Built with **p5.js**, using **Perlin Noise** for organic motion and **curveVertex** to draw a chronological path between meals.
-- **UI Design**: A minimalist, paper-textured interface with "Polaroid" style previews.
+- Node.js: I wrote a small script to read my photo folder and create a data.json file (ID, date, tag, score).
+<img width="540" height="636" alt="data" src="https://github.com/user-attachments/assets/e1a56f8d-3d19-483f-bf41-5eb67a0673f0" />
 
-## Interaction Guide
-- **Floating Nodes**: Circle size represents my interest level; colours represent cuisine types.
-- **Click to Explore**: Click a node to view the corresponding photo and its attributes.
-- **Dynamic Connections**: Lines shift as nodes move, reflecting how memory and preference are not fixed.
+- p5.js: I used Perlin Noise to make the nodes float naturally. I used curveVertex to draw a timeline-like path between meals.
+- UI: Simple interface with a paper texture and a Polaroid-style preview.
+
+## How to play
+- Floating Nodes**: Circle size represents my interest level; colours represent cuisine types.
+- Click to Explore**: Click a node to view the corresponding photo and its attributes.
+- Dynamic Connections**: Lines shift as nodes move, reflecting how memory and preference are not fixed.
 
 ## Ethics / Privacy
-- Uses **only my own photos**.
-- The exported `data.json` contains **minimised, non-sensitive fields** (no precise GPS coordinates or personal identifiers).
-- Original images and full metadata remain **local** and are not uploaded publicly.
+- I only used my own photos.
+- data.json only includes basic information (no exact GPS, no personal details).
+- Original photos are stored within this repository for visualization purposes only, and all sensitive metadata (like exact GPS locations) has been stripped during the Node.js extraction process.
